@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="css/snake.css" />
+  </head>
+  <body>
+    <div id="gameContainer">
+      <h1>Snake</h1>
+      <h3>
+        Utilice las Flechas (<span>&#8592;</span> <span>&#8593;</span>
+        <span>&#8594;</span> <span>&#8595;</span>) para moverse por el
+        tablero<br />
+        y la Barra Espaciadora para Iniciar el Juego.
+      </h3>
+
+      <!-- Tabla de Puntajes -->
+      <div id="scoreTable" style="display: none">
+        <table id="tabla">
+          <tr>
+            <th><strong>POSICIÓN</strong></th>
+            <th><strong>NOMBRE</strong></th>
+            <th><strong>PUNTAJE</strong></th>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Tablero -->
+      <canvas id="gameBoard" width="650" height="500"></canvas>
+
+      <!-- Puntaje -->
+      <div id="controls">
+        <div id="scoreBoard">
+          <p>Puntos: <span id="scoreText">0</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="js/engine.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/display.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
